@@ -321,9 +321,45 @@ export default function RegistrationPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="mt-2 w-full rounded-full bg-purple-600 hover:bg-purple-500 text-sm font-semibold py-2.5 tracking-wide transition-transform duration-150 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="mt-3 w-full inline-flex items-center justify-center gap-2
+             rounded-full
+             bg-gradient-to-r from-purple-600 to-indigo-600
+             hover:from-purple-500 hover:to-indigo-500
+             text-sm font-semibold py-3 tracking-wide
+             shadow-md shadow-purple-600/30
+             transition-all duration-200
+             hover:-translate-y-0.5 hover:shadow-purple-500/40
+             disabled:opacity-60 disabled:cursor-not-allowed
+             focus-visible:outline-none
+             focus-visible:ring-2 focus-visible:ring-purple-400
+             focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit Registration'}
+                {isSubmitting ? (
+                  <>
+                    <svg
+                      className="h-4 w-4 animate-spin text-white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      />
+                      <path
+                        className="opacity-75"
+                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    Submitting…
+                  </>
+                ) : (
+                  <>Submit Registration</>
+                )}
               </button>
             </form>
           </div>

@@ -261,14 +261,26 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-center gap-3 justify-center lg:justify-start pt-2">
                 <Link
                   href="/registration"
-                  className="inline-flex items-center justify-center rounded-full bg-purple-600 hover:bg-purple-500 text-sm font-semibold px-7 py-2.5 tracking-wide transition-transform duration-150 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full
+               bg-gradient-to-r from-purple-600 to-indigo-600
+               hover:from-purple-500 hover:to-indigo-500
+               text-sm font-semibold px-7 py-2.5 tracking-wide
+               shadow-md shadow-purple-600/30
+               transition-all duration-200
+               hover:-translate-y-0.5 hover:shadow-purple-500/40"
                 >
                   Register for the Workshop
+                  <span className="text-[10px] font-medium bg-white/15 px-2 py-0.5 rounded-full">
+                    RM15
+                  </span>
                 </Link>
 
                 <a
                   href="#features"
-                  className="text-xs sm:text-sm text-zinc-300 hover:text-white underline underline-offset-4 decoration-zinc-600 hover:decoration-purple-400"
+                  className="text-xs sm:text-sm text-zinc-300 hover:text-white
+               underline underline-offset-4
+               decoration-zinc-600 hover:decoration-purple-400
+               transition-colors"
                 >
                   See what you will get
                 </a>
@@ -372,9 +384,18 @@ export default function HomePage() {
 
             <Link
               href="/registration"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-purple-600 hover:bg-purple-500 text-sm font-semibold px-8 py-2.5 tracking-wide transition-transform duration-150 hover:-translate-y-0.5"
+              className="mt-8 inline-flex items-center justify-center gap-2 rounded-full
+             bg-gradient-to-r from-purple-600 to-indigo-600
+             hover:from-purple-500 hover:to-indigo-500
+             text-sm font-semibold px-9 py-3 tracking-wide
+             shadow-lg shadow-purple-600/30
+             transition-all duration-200
+             hover:-translate-y-0.5 hover:shadow-purple-500/40"
             >
               Register for the Workshop
+              <span className="text-xs font-medium bg-white/15 px-2 py-0.5 rounded-full">
+                RM15
+              </span>
             </Link>
           </div>
         </section>
