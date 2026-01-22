@@ -20,12 +20,12 @@ export default async function AdminPage() {
       <div className="max-w-5xl mx-auto">
         <h1 className="text-3xl font-semibold mb-2">Admin – Registrations</h1>
         <p className="text-sm text-gray-300 mb-6">
-          Approve or reject workshop registrations. Approval emails contain a
-          unique QR code. Rejection emails include a support phone number.
+          Approve or reject workshop registrations.
         </p>
 
         <AdminTable registrations={registrations} />
       </div>
-    </main>
-  );
+        
+    </main>
+  );
 }
