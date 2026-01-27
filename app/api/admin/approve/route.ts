@@ -78,7 +78,7 @@ export async function POST(req: Request) {
     </p>
 
     <p style="margin-top: 10px;">
-      <a href="https://discord.gg/PwUFGcXksP"
+      <a href="https://discord.gg/DCxMqUZHja"
          style="
            display: inline-block;
            background: #1c4e80;

@@ -450,7 +450,7 @@ export default function HomePage() {
             <div className="flex items-center gap-4">
               <div className="flex gap-4">
                 <a
-                  href="https://discord.gg/PwUFGcXksP"
+                  href="https://discord.gg/DCxMqUZHja"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Workshop Discord"
